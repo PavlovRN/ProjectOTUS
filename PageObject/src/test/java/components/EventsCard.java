@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import pages.BasePage;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -70,7 +68,7 @@ public class EventsCard extends BasePage {
 
         sortEventsMenu.click();
         String locator = String.format(sortEventsOpen, eventsSortingData.getNameFilter());
-        selector(By.cssSelector(locator)).click();
+        loc(By.cssSelector(locator)).click();
         return this;
     }
 }

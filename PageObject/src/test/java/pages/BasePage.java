@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
 
 public abstract class BasePage {
     protected WebDriver driver;
@@ -19,7 +18,7 @@ public abstract class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    protected WebElement selector(By selector) {
+    protected WebElement loc(By selector) {
         return driver.findElement(selector);
     }
 }

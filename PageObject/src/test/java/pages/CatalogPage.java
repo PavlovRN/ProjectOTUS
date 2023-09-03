@@ -1,6 +1,6 @@
 package pages;
 
-import components.CourseCard;
+
 import components.NewCourseCard;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
